@@ -297,4 +297,50 @@ $RECYCLE.BIN/
     <li>magenta	hsl(300, 100%, 50%)</li>
   </ul>
   <p>You can use this colour wheel to get any color you wish! above is some basic colours in HSL</p>
+  <hr>
+  <h1><strong>GET HYPED<strong></h1>
+  <hr>
+  <p>you can use the CSS transform scale property to; change size, scale an element on hover, skew on element in different axis'
+  //example code//
+  <style>
+  div { 
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+  }
+  div:hover {
+  transform: scale(1.1);
+  }
+</style>
+<div></div>
+//example code//
+<style>
+  .ball { 
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 20%;
+  }
+  #ball2 {
+    left: 65%;
+    transform:scale(1.5);
+    transform: skewX(24deg);<!--
+  }
+</style>
+<div class="ball" id= "ball1"></div>
+<div class="ball" id= "ball2"></div>
 <html>
