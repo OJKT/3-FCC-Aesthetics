@@ -173,10 +173,14 @@ $RECYCLE.BIN/
     h1 {
       font-size: 68px;
       font-weight: 600;
+      
     }
     h2 {
       font-size: 52px;
       font-weight: 500;
+      position: absolute;
+      top:10px;
+      left:10px
     }
     h3 {
       font-size: 40px;
@@ -194,13 +198,86 @@ $RECYCLE.BIN/
       font-size: 14px;
       font-weight: 150;
     }
+    p {
+      position: relative;
+      bottom: 10px;
+    }
   </style>
   <ul>
-  <li><h1>Set the font-size for Multiple Heading Elements</h1></li>
-  <li><h2>Set the font-weight for Multiple Heading Elements</h2></li>
-  <li><h3>Set the font-size of Paragraph Text</h3></li>
-  <li><h4>Set the line-height of Paragraphs</h4></li>
-  <li><h5>Adjust the Hover State of an Anchor Tag</h5></li>
-  <li><h6>keep calm and code on</h6></li>
+    <li><h1>Set the font-size for Multiple Heading Elements</h1></li>
+    <li><h2>Set the font-weight for Multiple Heading Elements</h2></li>
+    <li><h3>Set the font-size of Paragraph Text</h3></li>
+    <li><h4>Set the line-height of Paragraphs</h4></li>
+    <li><h5>Adjust the Hover State of an Anchor Tag</h5></li>
+    <li><h6>keep calm and code on</h6></li>
   </ul>
+  <img src="https://i.imgur.com/eWWi3gZ.gif" alt="a gif to show how offset elements work to a objext text such as a heading.">
+  <legend>
+    <p>How Ofset Elements work... In a Gif<p>
+  </legend>
+  <hr>
+  <body>
+  <p>The CSS box model is just the way the elements follow the normal flow... we can change the normal flow with the style element, see the last style section above and how I have changed this paragraph with position relative. Also see how I have used position Asolute on the earlier h2</p>
+<hr>
+//example code//
+<!--
+   <style>
+    #navbar {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color: #767676;
+    }
+    nav ul {
+      margin: 0px;
+      padding: 5px 0px 5px 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <header>
+      <hr>
+      <h1>Welcome!</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>I shift up when the #navbar is fixed to the browser window.</p>
+  </body>
+-->
+<hr>
+<p><u>You can also float boxes for navigation. left and right</u> below is an example of overlapping and using z-index to order boxes</p>
+<style>
+  div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    <!--<p>You can see the margin-top was set to 20px, it could also be set horizontally to auto. This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.</p>--> 
+    top: 50px;
+    z-index: 1;
+  }
+</style>
+<div class="first"></div>
+<div class="second"></div>
+//example code//
 <html>
