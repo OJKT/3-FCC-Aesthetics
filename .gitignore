@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+  <style>
+    body {
+      background: url(https://i.imgur.com/MJAkxbh.png)
+    }
+  </style>
 # Created by https://www.gitignore.io/api/web,c++,windows,dotsettings,metaprogrammingsystem
 # Edit at https://www.gitignore.io/?templates=web,c++,windows,dotsettings,metaprogrammingsystem
 
@@ -280,4 +285,16 @@ $RECYCLE.BIN/
 <div class="first"></div>
 <div class="second"></div>
 //example code//
+  <p>Colours have several characteristics including hue, saturation, and lightness. CSS3 introduced the hsl() property as an alternative way to pick a color by directly stating these characteristics.</p>
+  <hr>
+  <p>after looking at HEX codes and short HEX it is important to introduce HSL... as catogorised into three as explained above... HSL uses a colour wheel and the angles from the 12'O'clock position round 360DEG. hue uses a color wheel concept instead of the spectrum, where the angle of the color on the circle is given as a value between 0 and 360.</p>
+  <ul>
+    <li>red	hsl(0, 100%, 50%)</li>
+    <li>yellow	hsl(60, 100%, 50%)</li>
+    <li>green	hsl(120, 100%, 50%)</li>
+    <li>cyan	hsl(180, 100%, 50%)</li><!--slight adjustments say 10% of both saturation and lightness can change the colour dramatically-->
+    <li>blue	hsl(240, 100%, 50%)</li>
+    <li>magenta	hsl(300, 100%, 50%)</li>
+  </ul>
+  <p>You can use this colour wheel to get any color you wish! above is some basic colours in HSL</p>
 <html>
