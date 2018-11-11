@@ -260,30 +260,30 @@ $RECYCLE.BIN/
     <p>I shift up when the #navbar is fixed to the browser window.</p>
   </body>
 -->
-<hr>
-<p><u>You can also float boxes for navigation. left and right</u> below is an example of overlapping and using z-index to order boxes</p>
-<style>
-  div {
-    width: 60%;
-    height: 200px;
-    margin-top: 20px;
-  }
-  .first {
-    background-color: red;
-    position: absolute;
-    z-index: 2;
-  }
-  .second {
-    background-color: blue;
-    position: absolute;
-    left: 40px;
-    <!--<p>You can see the margin-top was set to 20px, it could also be set horizontally to auto. This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.</p>--> 
-    top: 50px;
-    z-index: 1;
-  }
-</style>
-<div class="first"></div>
-<div class="second"></div>
+  <hr>
+  <p><u>You can also float boxes for navigation. left and right</u> below is an example of overlapping and using z-index to order boxes</p>
+  <style>
+    div {
+      width: 60%;
+      height: 200px;
+      margin-top: 20px;
+    }
+    .first {
+      background-color: red;
+      position: absolute;
+      z-index: 2;
+    }
+    .second {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      <!--<p>You can see the margin-top was set to 20px, it could also be set horizontally to auto. This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.</p>--> 
+      top: 50px;
+      z-index: 1;
+    }
+  </style>
+  <div class="first"></div>
+  <div class="second"></div>
 //example code//
   <p>Colours have several characteristics including hue, saturation, and lightness. CSS3 introduced the hsl() property as an alternative way to pick a color by directly stating these characteristics.</p>
   <hr>
@@ -319,28 +319,80 @@ $RECYCLE.BIN/
 </style>
 <div></div>
 //example code//
-<style>
-  .ball { 
-    width: 40px;
-    height: 40px;
-    margin: 50 auto;
-    position: fixed;
-    background: linear-gradient(
-      35deg,
-      #ccffff,
-      #ffcccc
-    );
+  <style>
+    .ball { 
+      width: 40px;
+      height: 40px;
+      margin: 50 auto;
+      position: fixed;
+      background: linear-gradient(
+        35deg,
+        #ccffff,
+        #ffcccc
+      );
+      border-radius: 50%;
+    }
+    #ball1 {
+      left: 20%;
+    }
+    #ball2 {
+      left: 65%;
+      transform:scale(1.5);
+      transform: skewX(24deg);<!--
+    }
+    </style>
+  <div class="ball" id= "ball1"></div>
+  <div class="ball" id= "ball2"></div>
+    <hr>
+    <p>[7] see below</p>
+    <ul>
+      <li> a Graphic Using CSS</li>
+      <li>Create a More Complex Shape Using CSS and HTML</li>
+      <li>Learn How the CSS @keyframes and animation Properties Work</li>
+      <li>Use CSS Animation to Change the Hover State of a Button</li>
+      <li>Modify Fill Mode of an Animation</li>
+      <li>Create Movement Using CSS Animation</li>
+      <li>Create Visual Direction by Fading an Element from Left to Right</li>
+      <li>Animate Elements Continually Using an Infinite Animation Count</li>
+      <li>PassedMake a CSS Heartbeat using an Infinite Animation Count</li>
+      <li>Animate Elements at Variable Rates</li>
+      <li>Animate Multiple Elements at Variable Rates</li>
+      <li>Change Animation Timing with Keywords</li>
+      <li>Learn How Bezier Curves Work</li>
+      <li>Use a Bezier Curve to Move a Graphic</li>
+      <li>Make Motion More Natural Using a Bezier Curve</li>
+    </ul>
+    <hr>
+  
+  <style>
+  .stars {
+    background-color: white;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
+    animation-iteration-count: infinite;
   }
-  #ball1 {
-    left: 20%;
+
+  .star-1 {
+    margin-top: 15%; 
+    margin-left: 60%;
+    animation-duration: 1s;
+    animation-name: twinkle;
   }
-  #ball2 {
-    left: 65%;
-    transform:scale(1.5);
-    transform: skewX(24deg);<!--
-  }
-</style>
-<div class="ball" id= "ball1"></div>
-<div class="ball" id= "ball2"></div>
+  </style>
+  
+  <@keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  <!--<p>note how the key frames is used for any animation or action</p>-->
+  <hr>
+  <p>once you have made a graphic such as a cresent or more complex shapes such as cars, horses and figures... using @keyframes you can change any aspect of the text or boxes at "key frames" in the animation specified by %...100% is the end frame and 0% is the start frame... you can change scale,hover state, color, opacity, variable rates, and animation timings... there are more complicated mathematical changes you can make... a quick example below</p> 
+  <p>
+   animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+                           : Linear
+                           : ease-out
+                           :>there are many other timing functions that follow the flow of any mathical graph... you will have to google them if you need them I supose<I'm sure there will be someother github user with repositories fully dedicated to theese functions as well as colors and style elements and (ect)
+  </p>                                            
 <html>
